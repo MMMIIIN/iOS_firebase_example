@@ -24,6 +24,21 @@ class FireStoreManager: ObservableObject {
         }
     }
 
+    func addData(title: String, nickname: String) {
+        let db = Firestore.firestore()
+        let docRef = db.collection("freeboard")
+        docRef.document().setData([
+            "title": title,
+            "nickname": nickname
+            ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
+
     init() {
         fetchData()
     }
