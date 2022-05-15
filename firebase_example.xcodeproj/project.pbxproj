@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390C734F282FD6C0009A7554 /* AddDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C734E282FD6C0009A7554 /* AddDataView.swift */; };
+		395CC7C928310FE200C13A90 /* Freeboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395CC7C828310FE200C13A90 /* Freeboard.swift */; };
 		39FE6E8C282BD44F0085E409 /* firebase_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6E8B282BD44F0085E409 /* firebase_exampleApp.swift */; };
 		39FE6E8E282BD44F0085E409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6E8D282BD44F0085E409 /* ContentView.swift */; };
 		39FE6E90282BD4500085E409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6E8F282BD4500085E409 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		390C734E282FD6C0009A7554 /* AddDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataView.swift; sourceTree = "<group>"; };
+		395CC7C828310FE200C13A90 /* Freeboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freeboard.swift; sourceTree = "<group>"; };
 		39FE6E88282BD44F0085E409 /* firebase_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebase_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FE6E8B282BD44F0085E409 /* firebase_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebase_exampleApp.swift; sourceTree = "<group>"; };
 		39FE6E8D282BD44F0085E409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		395CC7C528310FBF00C13A90 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				395CC7C828310FE200C13A90 /* Freeboard.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		39FE6E7F282BD44F0085E409 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		39FE6E8A282BD44F0085E409 /* firebase_example */ = {
 			isa = PBXGroup;
 			children = (
+				395CC7C528310FBF00C13A90 /* Data */,
 				390C734D282FD6AD009A7554 /* Views */,
 				39FE6E8B282BD44F0085E409 /* firebase_exampleApp.swift */,
 				39FE6E8D282BD44F0085E409 /* ContentView.swift */,
@@ -173,6 +184,7 @@
 				39FE6EA3282BDAF30085E409 /* FirebaseManager.swift in Sources */,
 				390C734F282FD6C0009A7554 /* AddDataView.swift in Sources */,
 				39FE6E8C282BD44F0085E409 /* firebase_exampleApp.swift in Sources */,
+				395CC7C928310FE200C13A90 /* Freeboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

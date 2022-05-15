@@ -1,4 +1,5 @@
 import Firebase
+import FirebaseFirestoreSwift
 
 class FireStoreManager: ObservableObject {
     @Published var freeboardTitle: String = ""
@@ -36,6 +37,16 @@ class FireStoreManager: ObservableObject {
             } else {
                 print("Document successfully written!")
             }
+        }
+    }
+    
+    func addData(data: Freeboard) async {
+        let db = Firestore.firestore()
+        let docRef = db.collection("freeboard")
+        do {
+            try docRef.document().setData(from: data)
+        } catch let error {
+            print(error)
         }
     }
 
